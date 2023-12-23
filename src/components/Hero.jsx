@@ -45,7 +45,6 @@ const Hero = () => {
                         <span style={{color:'grey'}}><Cursor cursorStyle='|'/></span>
                     </h3>
                     <motion.div variants={wrapperVariants} className="buttons">
-                        <button  ><a href='#Portfolio'>See the Latest Works</a></button>
                         <button  ><a href='https://www.linkedin.com/in/aditya-dadhich-9a708a262/?originalSubdomain=in'>Connect With Me</a></button>
                     </motion.div>
                     <motion.div variants={wrapperVariants}  className="scrollIcon">
