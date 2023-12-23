@@ -1,0 +1,64 @@
+
+.Portfolio-Container {
+    width: 100%;
+    background-color: #0c0c1d;
+    position: relative;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 30px;
+        text-align: center;
+        color: orange;
+    }
+
+    .progressBar {
+        background-color: white;
+        margin-top: 10px;
+        height: 5px;
+    }
+
+    .item-container {
+        height:100vh;
+        .wrapper {
+            max-width: 800px;
+            width: 95%;
+            margin: 0px auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+            .app-image-container {
+                width: 50vw;
+                height: 50vh;
+                margin-right: 30px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 4px 4px 3px grey;
+                }
+            }
+
+           
+            .app-des{
+                button{
+                    margin-top:10px;
+                    width:fit-content;
+                    height: fit-content;
+                    padding:1.2vh 2vw;
+                    background-color: orange;
+                    border-radius: 10px;
+                    outline:none;
+                    a{
+                        color:white;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

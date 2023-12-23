@@ -1,0 +1,122 @@
+body{
+  overflow-y: hidden;
+}
+.contact {
+  height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .textContainer {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap:20px;
+
+  
+
+    h1 {
+      font-size: 80px;
+      line-height: 88px;
+
+      
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  @media (max-width:750px){
+    .textContainer{
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media (max-width:500px){
+    .textContainer{
+      width:100%;
+      text-align: center;
+    }
+  }
+
+  
+
+  .formContainer {
+    width:45%;
+    position: relative;
+    
+   
+
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+    }
+
+    @media (max-width:500px){
+      .phoneSvg{
+        transform: scale(0.7);
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 2;
+
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+        z-index: 2;
+
+       
+      }
+
+      button {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+        z-index: 2;
+       
+      }
+    }
+
+    @media (max-width:500px){
+      form{
+        button{
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width:500px){
+    .formContainer{
+      width:90%;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  }
+
+ 
+}
+
+@media (max-width:500px){
+  .contact{
+    width:100%;
+    height:100vh;
+    flex-direction: column;
+  }
+}
