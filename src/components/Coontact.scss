@@ -61,6 +61,11 @@ body{
     @media (max-width:500px){
       .phoneSvg{
         transform: scale(0.7);
+        width:95%;
+        margin:0px auto;
+        svg{
+          width:100%;
+        }
       }
     }
 
@@ -69,6 +74,7 @@ body{
       flex-direction: column;
       gap: 20px;
       z-index: 2;
+     
 
       input,
       textarea {
